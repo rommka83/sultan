@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+  width: fit-content;
+  padding: 10px 10px 10px 20px;
+  background-color: var(--color-9);
+  border-radius: 36px;
+}
+.inp {
+  margin-right: 10px;
+  background-color: transparent;
+}

@@ -1,0 +1,23 @@
+.btn {
+  display: flex;
+  background-color: var(--color-6);
+}
+.btnTxt {
+  padding: 20px 50px;
+  border-radius: 80px;
+}
+.btnRing {
+  padding: 12px;
+  border-radius: 50%;
+}
+.text {
+  margin-right: 12px;
+
+  font-weight: 700;
+  line-height: 17px;
+  color: var(--color-8);
+}
+.icon {
+  width: 18px;
+  height: 18px;
+}
