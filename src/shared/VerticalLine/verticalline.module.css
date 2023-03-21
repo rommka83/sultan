@@ -1,0 +1,4 @@
+.line {
+  width: 1px;
+  border-right: 1px dashed var(--color-2-01);
+}

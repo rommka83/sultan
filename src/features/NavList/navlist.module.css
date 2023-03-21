@@ -2,7 +2,24 @@
   display: flex;
 }
 .item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+.item:not(:last-child) {
+  padding-right: 30px;
+  border-right: 1px dashed var(--color-2-01);
 }
 .link {
   color: var(--color-2);
+}
+
+@media (max-width: 800px) {
+  .item {
+    padding-left: 10px;
+  }
+
+  .item:not(:last-child) {
+    padding-right: 10px;
+  }
 }

@@ -7,6 +7,7 @@
   border-radius: 80px;
 }
 .btnRing {
+  height: fit-content;
   padding: 12px;
   border-radius: 50%;
 }
@@ -14,10 +15,21 @@
   margin-right: 12px;
 
   font-weight: 700;
-  line-height: 17px;
   color: var(--color-8);
 }
 .icon {
   width: 18px;
   height: 18px;
+  display: flex;
+}
+
+@media (max-width: 641px) {
+  .btnRing {
+    padding: 10px;
+  }
+
+  .icon {
+    width: 12px;
+    height: 12px;
+  }
 }

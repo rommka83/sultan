@@ -1,0 +1,35 @@
+.header {
+  background: linear-gradient(
+    180deg,
+    var(--color-8) 50px,
+    var(--color-2-02) 51px 51px,
+    var(--color-8) 51px 90px,
+    var(--color-2-02) 91px
+  );
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 41px;
+}
+.layoutTop {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.layoutBottom {
+  grid-column: 1;
+  grid-row: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (min-width: 641px) {
+  .header {
+    display: none;
+  }
+}

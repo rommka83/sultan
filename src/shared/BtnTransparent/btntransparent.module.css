@@ -1,0 +1,14 @@
+.btn {
+  display: flex;
+  width: fit-content;
+}
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
+}
+.text {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-2);
+}

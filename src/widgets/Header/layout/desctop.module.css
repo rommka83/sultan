@@ -1,0 +1,67 @@
+.header {
+  background: linear-gradient(
+    180deg,
+    var(--color-8) 60px,
+    var(--color-2-02) 61px 61px,
+    var(--color-8) 61px 159px,
+    var(--color-2-02) 160px
+  );
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 100px;
+
+  align-items: center;
+}
+.layoutTop {
+  grid-column: 1;
+  grid-row: 1;
+
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.mail {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.nav {
+  margin-left: auto;
+}
+.layoutBottom {
+  grid-column: 1;
+  grid-row: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btnPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+@media (max-width: 1260px) {
+  .navigation,
+  .mail,
+  .btnPrice,
+  .backCall {
+    display: none;
+  }
+  .nav {
+    margin-left: 0;
+  }
+}
+@media (max-width: 640px) {
+  .header {
+    display: none;
+  }
+}

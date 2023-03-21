@@ -12,9 +12,7 @@ export function SearchForm() {
         placeholder='Поиск...'
         className={styles.inp}
       />
-      <div className={styles.btn}>
-        {<Btn icon={<SvgIcon type='search' />} />}
-      </div>
+      {<Btn icon={<SvgIcon type='search' />} />}
     </form>
   );
 }

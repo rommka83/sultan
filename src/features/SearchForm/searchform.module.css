@@ -1,7 +1,7 @@
 .form {
   display: flex;
   width: fit-content;
-  padding: 10px 10px 10px 20px;
+  padding: 7px 10px 7px 20px;
   background-color: var(--color-9);
   border-radius: 36px;
 }
