@@ -1,0 +1,1 @@
+export { productsDB } from './DBProducts';

@@ -23,3 +23,22 @@
     padding-right: 10px;
   }
 }
+@media (max-width: 641px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+  .item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .item:not(:last-child) {
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 1px dashed var(--color-2-01);
+  }
+  .link {
+    color: var(--color-2);
+  }
+}

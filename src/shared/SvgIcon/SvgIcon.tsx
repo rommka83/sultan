@@ -9,7 +9,9 @@ export interface ISvgProps {
     | 'navigation'
     | 'mail'
     | 'basket'
-    | 'burger';
+    | 'burger'
+    | 'arrowLeft'
+    | 'arrovBottom';
 }
 
 export function SvgIcon({ type, color = '#fff' }: ISvgProps) {
@@ -101,6 +103,26 @@ export function SvgIcon({ type, color = '#fff' }: ISvgProps) {
           />
         </svg>
       );
+    case 'arrowLeft':
+      return (
+        <svg viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
+          <path d='M5 1L1 5L5 9' stroke='#3F4E65' />
+        </svg>
+      );
+    case 'arrovBottom':
+      return (
+        <svg viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'>
+          <path d='M1 1L5 5L9 1' stroke='#3F4E65' />
+        </svg>
+      );
+    // case '':
+    //   return (
+
+    //   );
+    // case '':
+    //   return (
+
+    //   );
     // case '':
     //   return (
 

@@ -1,1 +1,3 @@
-# yo react-ts-component-dir [component_name] [path] [--styles] [--less] [--sass]
+### Начало:
+
+src\app\store\catalogProductsStore.ts - определение массива, с которым продолжится работа (статичная база данных/LocalStorage)
