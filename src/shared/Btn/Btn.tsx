@@ -6,19 +6,28 @@ interface IBtn {
   icon?: ReactElement;
   f?: () => void;
   color?: string;
+  sitze?: 'big' | 'small';
 }
 
-export function Btn({ text, icon, f, color = 'var(--color-5)' }: IBtn) {
+export function Btn({
+  text,
+  icon,
+  f,
+  color = 'var(--color-5)',
+  sitze = 'big',
+}: IBtn) {
   return (
     <button
       style={{ backgroundColor: color }}
       onClick={f}
-      className={`${styles.btn} ${text ? styles.btnTxt : styles.btnRing}`}
+      className={`${styles.btn} ${!text && styles.btnRing} ${
+        text && sitze === 'big' && styles.btnBig
+      } ${text && sitze === 'small' && styles.btnSmall}`}
     >
-      {text && (
-        <span className={icon ? styles.text : styles.text1}>{text}</span>
-      )}
-      {icon ? <div className={styles.icon}>{icon}</div> : null}
+      <>
+        {text}
+        {icon && <div className={styles.icon}>{icon}</div>}
+      </>
     </button>
   );
 }

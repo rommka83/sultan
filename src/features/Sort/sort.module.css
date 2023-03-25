@@ -1,0 +1,44 @@
+.BlockSort {
+  display: flex;
+  align-items: center;
+}
+.label {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.sort {
+  position: relative;
+}
+.inp {
+  max-width: 100px;
+  padding: 5px;
+  font-size: 16px;
+  color: var(--color-2);
+}
+.list {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid var(--color-2-01);
+  border-radius: 10px;
+  background-color: var(--color-5);
+}
+.item {
+  padding: 5px 0;
+  font-size: 16px;
+  color: var(--color-2);
+}
+.btn {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 3.5px 0 3.5px;
+  border-color: #3f4e65 transparent transparent transparent;
+  transition: transform 0.3s ease-in-out;
+}
+.btnUp {
+  transform: rotate(180deg);
+}

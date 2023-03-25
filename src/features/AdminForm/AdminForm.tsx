@@ -1,6 +1,7 @@
 import { nanoid } from '@reduxjs/toolkit';
 import { localStorageAdded } from 'app/store/catalogProductsStore';
 import { useAppDispatch, useAppSelector } from 'app/store/hooks';
+import { resetMultySelect } from 'app/store/multySelectStore';
 import { IProduct } from 'app/types/product';
 import { Back } from 'features/Back';
 import { MyMultySelect } from 'features/MyMultySelect';
@@ -22,9 +23,8 @@ export function AdminForm() {
   const [price, setPrice] = useState('');
 
   const productsCatalog = useAppSelector((state) => state.productsCatalog);
+  const multySelectStore = useAppSelector((state) => state.multySelectValue);
   const dispatch = useAppDispatch();
-
-  console.log(productsCatalog);
 
   const added = function () {
     let obj: IProduct = {
@@ -33,19 +33,26 @@ export function AdminForm() {
       name,
       sizeType: document.forms[1].elements[2].getAttribute('value'),
       size,
-      barcode,
+      barcode: barcode === '' ? String(Date.now()) : barcode,
       manufacturer,
       brand,
       description,
       price,
-      typeOfCare: document.forms[1].elements[10]
-        .getAttribute('value')
-        ?.split(','),
+      typeOfCare: multySelectStore.value.split(','),
       cosmeticType: !disabled,
     };
 
-    // localStorage.setItem('catalogProduct', JSON.stringify(catalogProduct));
     dispatch(localStorageAdded(obj));
+    dispatch(resetMultySelect());
+    setUrl('');
+    setName('');
+    setSize('');
+    setBarcode('');
+    setManufacturer('');
+    setBrand('');
+    setDescription('');
+    setPrice('');
+    setDisabled(true);
   };
 
   return (
@@ -85,7 +92,7 @@ export function AdminForm() {
           />
         </label>
         <label className={styles.label}>
-          штрихкод:
+          штрихкод (EAN-13):
           <input
             type='text'
             className={styles.inp}
@@ -134,9 +141,9 @@ export function AdminForm() {
           <input
             type='checkbox'
             className={styles.chbox}
+            checked={!disabled}
             onChange={(e) => {
               e.target.checked ? setDisabled(false) : setDisabled(true);
-              console.log(e.target.checked);
             }}
           />
         </label>
@@ -146,9 +153,9 @@ export function AdminForm() {
         </label>
       </form>
       <div className={styles.blockBtn}>
-        <Btn text='Добавить' f={added} />
-        <Btn text='Изменить' />
-        <Btn text='Удалить' />
+        <Btn text='Добавить' f={added} sitze='small' />
+        <Btn text='Изменить' sitze='small' />
+        <Btn text='Удалить' sitze='small' />
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import { Basket } from 'features/Basket';
 import { NavList } from 'features/NavList';
 import { SearchForm } from 'features/SearchForm';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Btn } from 'shared/Btn';
 import { Logo } from 'shared/Logo';
 import { SvgIcon } from 'shared/SvgIcon';
@@ -41,7 +42,9 @@ export function Desctop() {
         <div className={styles.layoutBottom}>
           <Logo />
           <div className={styles.btnCatalog}>
-            <Btn text='Каталог' icon={<SvgIcon type='catalog' />} />
+            <Link to='/catalog'>
+              <Btn text='Каталог' icon={<SvgIcon type='catalog' />} />
+            </Link>
           </div>
           <div className={styles.search}>
             <SearchForm />

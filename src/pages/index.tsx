@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 
 const Main = lazy(() => import('./main'));
 const AdminCabinet = lazy(() => import('./AdminCabinet'));
+const CatalogPage = lazy(() => import('./CatalogPage'));
 
 export const Routing = () => {
   return (
@@ -13,6 +14,7 @@ export const Routing = () => {
       <Routes>
         <Route path='/' element={<Main />}>
           <Route path='admin' element={<AdminCabinet />} />
+          <Route path='catalog' element={<CatalogPage />} />
         </Route>
       </Routes>
     </Suspense>

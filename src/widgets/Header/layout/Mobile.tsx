@@ -29,7 +29,7 @@ export function Mobile() {
           )}
         </div>
         <div className={styles.layoutBottom}>
-          <Link to='/'>
+          <Link to='/catalog'>
             <BtnTransparent
               icon={<SvgIcon type='catalog' color='#3f4e65' />}
               text='Каталог'

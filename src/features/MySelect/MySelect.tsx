@@ -1,4 +1,6 @@
 import { nanoid } from '@reduxjs/toolkit';
+import { useAppDispatch, useAppSelector } from 'app/store/hooks';
+import { setMySelectValue } from 'app/store/mySelectStore copy';
 import React, { useState } from 'react';
 import { SvgIcon } from 'shared/SvgIcon';
 import styles from './myselect.module.css';
@@ -11,13 +13,14 @@ interface IProps {
 
 export function MySelect({ f }: IProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [value, setValue] = useState(typeOfCare[0]);
   const [list, setList] = useState(
-    typeOfCare.filter((e) => e !== typeOfCare[0])
+    typeOfCare.filter((e) => e !== typeOfCare[1])
   );
+  const mySelectStore = useAppSelector((state) => state.mySelectValue);
+  const dispatch = useAppDispatch();
 
   const setInputValue = function (el: string) {
-    setValue(el);
+    dispatch(setMySelectValue(el));
     setList(() => {
       return typeOfCare.filter((e) => e !== el);
     });
@@ -30,7 +33,7 @@ export function MySelect({ f }: IProps) {
           type='text'
           className={styles.inp}
           onClick={() => setIsOpen(!isOpen)}
-          value={value}
+          value={mySelectStore.value}
           readOnly
         />
         <div className={`${styles.arrow} ${isOpen && styles.arrowIsOpen}`}>

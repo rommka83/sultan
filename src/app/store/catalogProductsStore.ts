@@ -1,25 +1,15 @@
-import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { IProduct } from 'app/types/product';
-import axios from 'axios';
-
-import { productsDB } from '../DB';
+import DB from '../DB/DB.json';
 
 type catalogProductsState = {
   products: IProduct[];
-  pending: boolean;
-  error: boolean;
 };
 
-let catalogProduct: IProduct[];
 const oldData = localStorage.getItem('catalogProduct');
-oldData !== null
-  ? (catalogProduct = JSON.parse(oldData))
-  : (catalogProduct = []);
 
 const initialState: catalogProductsState = {
-  products: catalogProduct.length === 0 ? productsDB : catalogProduct,
-  pending: false,
-  error: false,
+  products: !oldData ? DB : JSON.parse(oldData),
 };
 
 const catalogProductsStore = createSlice({
@@ -29,12 +19,12 @@ const catalogProductsStore = createSlice({
     localStorageAdded(state, obj: PayloadAction<IProduct>) {
       state.products = [...state.products, obj.payload];
       localStorage.setItem('catalogProduct', JSON.stringify(state.products));
-
-      console.log(state.products);
+    },
+    sort(state, obj: PayloadAction<IProduct[]>) {
+      state.products = obj.payload;
     },
   },
 });
 
-export const { localStorageAdded } = catalogProductsStore.actions;
+export const { localStorageAdded, sort } = catalogProductsStore.actions;
 export default catalogProductsStore;
-// export { catalogProductsStore.reducer };

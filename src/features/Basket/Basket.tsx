@@ -7,7 +7,7 @@ export function Basket() {
     <div className={styles.root}>
       <div className={styles.blockBasket}>
         <button className={styles.btnBasket}>
-          <SvgIcon type='basket' />
+          <SvgIcon type='basket' color='var(--color-2)' />
         </button>
         <div className={styles.count}>3</div>
       </div>

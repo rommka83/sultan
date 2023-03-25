@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  padding: 45px 0;
+}
+.item {
+  padding-right: 10px;
+  font-weight: 300;
+  color: var(--color-2);
+}
+.item:not(:last-child) {
+  margin-right: 10px;
+  border-right: 1px dashed var(--color-2-01);
+}
+.item:last-child {
+  opacity: 0.5;
+}
+
+@media (max-width: 1000px) {
+  .list {
+    display: none;
+  }
+}
