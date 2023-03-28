@@ -1,0 +1,100 @@
+.footer {
+  padding-top: 70px;
+  padding-bottom: 115px;
+  background: var(--color-2);
+  box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+}
+.list {
+  display: flex;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0px;
+}
+.item:not(:last-child) {
+  margin-right: 50px;
+}
+.sultanDescription {
+  margin-top: 15px;
+  margin-bottom: 45px;
+  color: var(--color-8);
+  line-height: 150%;
+}
+.actionText {
+  margin-bottom: 15px;
+  margin-top: 20px;
+  color: var(--color-8);
+}
+.mailInp {
+  position: relative;
+  padding: 20px;
+
+  background: var(--color-8);
+  border-radius: 36px;
+}
+.mailInp > span {
+  color: var(--color-2);
+}
+.btnInp {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+  background: var(--color-5);
+  border-radius: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.subtytle {
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-8);
+}
+.navItem:not(:last-child) {
+  margin-bottom: 20px;
+}
+.navItem > a {
+  color: var(--color-8);
+}
+.manyList,
+.socialList {
+  display: flex;
+}
+.socialItem {
+  width: 40px;
+}
+.socialItem:not(:last-child) {
+  margin-right: 10px;
+}
+.link {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: var(--color-8);
+}
+.linkdesc {
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-size: 12px;
+  color: var(--color-8);
+}
+.linkSmall {
+  margin-bottom: 25px;
+  font-size: 10px;
+  text-decoration-line: underline;
+  color: var(--color-8);
+}
+.manyList {
+  margin-top: 25px;
+}
+.manyItem {
+  width: 61px;
+}
+.manyItem:not(:last-child) {
+  margin-right: 10px;
+}

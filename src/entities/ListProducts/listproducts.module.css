@@ -1,9 +1,44 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   gap: 10px;
+  margin-bottom: 55px;
 }
 .item {
   box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
+}
+.pagesList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 55px;
+}
+.pagesList > li {
+  cursor: pointer;
+}
+.pagesArrow {
+  display: flex;
+  align-items: center;
+  width: 15px;
+}
+.left {
+  margin-right: 35px;
+}
+.right {
+  margin-left: 35px;
+  transform: rotate(180deg);
+}
+.pagesItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-weight: 500;
+  color: var(--color-2);
+  border-radius: 50%;
+}
+.pagesItemActive {
+  background: var(--color-6);
 }

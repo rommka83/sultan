@@ -1,0 +1,42 @@
+.root {
+  padding: 15px;
+}
+.list {
+  margin-bottom: 15px;
+}
+.item {
+  padding: 5px 0;
+}
+.label {
+  display: flex;
+  align-items: center;
+}
+.inp {
+  margin-right: 10px;
+}
+.label > span {
+  color: var(--color-2);
+}
+.btn {
+  position: relative;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-2);
+}
+.btn::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 105%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 3.5px 0 3.5px;
+  border-color: #3f4e65 transparent transparent transparent;
+  transition: transform 0.3s ease-in-out;
+}
+.btn_open::after {
+  transform: rotate(180deg);
+}

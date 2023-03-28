@@ -7,9 +7,9 @@
     "size": "50",
     "barcode": "1234567891011",
     "manufacturer": "Россия",
-    "brand": " SKINATON",
+    "brand": "SKINATON",
     "description": "Средство от прыщей на лице / лосьон для умывания для проблемной кожи/ очищающее средство для умывания от прыщей и против акне/ чистая кожа лица",
-    "price": "1500",
+    "price": 1500,
     "typeOfCare": ["уход за лицом"],
     "cosmeticType": true
   },
@@ -21,9 +21,9 @@
     "size": "460",
     "barcode": "1679647958421",
     "manufacturer": "Россия",
-    "brand": " IN2BEAUTY Professional",
+    "brand": "IN2BEAUTY Professional",
     "description": "КРЕМ ГЕЛЬ для душа женский МАЛИНА и ШОКОЛАД, с маслом какао, спа ароматерапия подарочный, с дозатором 460мл",
-    "price": "282",
+    "price": 282,
     "typeOfCare": ["уход за телом"],
     "cosmeticType": true
   },
@@ -37,7 +37,7 @@
     "manufacturer": "Россия",
     "brand": "Savonry",
     "description": "Натуральный гель для душа КОЛА (искрящаяся газировка)",
-    "price": "311",
+    "price": 311,
     "typeOfCare": ["уход за телом"],
     "cosmeticType": true
   },
@@ -48,10 +48,10 @@
     "sizeType": "вес",
     "size": "300",
     "barcode": "1679648470351",
-    "manufacturer": " Греция",
+    "manufacturer": "Греция",
     "brand": "KALLISTON",
     "description": "Мочалка из ЕГИПЕТСКОЙ ЛЮФЫ 15 см. губка натуральная массажная для тела Греция (о. Крит)",
-    "price": "498",
+    "price": 498,
     "typeOfCare": ["уход за телом"],
     "cosmeticType": true
   },
@@ -62,11 +62,11 @@
     "sizeType": "вес",
     "size": "192",
     "barcode": "1679652471976",
-    "manufacturer": " Сан-Марино",
+    "manufacturer": "Сан-Марино",
     "brand": "GLYCOSAN",
     "description": "интенсивный комплекс для лечения себореи и предотвращения выпадения волос, (шампунь 150мл + ампулы 6 по7мл)",
-    "price": "111",
-    "typeOfCare": ["уход за волосами", " подарочные наборы"],
+    "price": 111,
+    "typeOfCare": ["уход за волосами", "подарочные наборы"],
     "cosmeticType": true
   },
   {
@@ -78,8 +78,8 @@
     "barcode": "1679652752856",
     "manufacturer": "PROCRAFT",
     "brand": "PROCRAFT",
-    "description": "Бензопила, 52см3, 2,3л. с 1,7кВт, шина 16\"/18\" / пила бензиновая / пила цепная",
-    "price": "8500",
+    "description": "Бензопила, 52см3, 2,3л. с 1,7кВт, шина 16\"/18\"/ пила бензиновая / пила цепная",
+    "price": 8500,
     "typeOfCare": [""],
     "cosmeticType": false
   },
@@ -93,7 +93,7 @@
     "manufacturer": "Mr. Proper",
     "brand": "Mr. Proper",
     "description": "",
-    "price": "1212",
+    "price": 1212,
     "typeOfCare": [""],
     "cosmeticType": false
   },
@@ -107,7 +107,7 @@
     "manufacturer": "Tide",
     "brand": "Tide",
     "description": "Стиральный порошок, автомат, для цветного белья",
-    "price": "1400",
+    "price": 1400,
     "typeOfCare": [""],
     "cosmeticType": false
   },
@@ -121,7 +121,7 @@
     "manufacturer": "Biorepair",
     "brand": "Biorepair",
     "description": "Зубная паста, Комплексная Защита",
-    "price": "2121",
+    "price": 2121,
     "typeOfCare": ["гигиена полости рта"],
     "cosmeticType": true
   },
@@ -135,7 +135,7 @@
     "manufacturer": "Ji Ping",
     "brand": "Ji Ping",
     "description": "Китайское средство от тараканов и муравьев.",
-    "price": "142",
+    "price": 142,
     "typeOfCare": [""],
     "cosmeticType": false
   },
@@ -149,7 +149,7 @@
     "manufacturer": "Россия",
     "brand": "Гринфилд",
     "description": "Кислородный отбеливатель, для цветного белья",
-    "price": "165",
+    "price": 165,
     "typeOfCare": [""],
     "cosmeticType": false
   },
@@ -163,7 +163,7 @@
     "manufacturer": "WALNUT",
     "brand": "WALNUT",
     "description": "Уничтожитель плесени, средство для удаления плесени и грибка",
-    "price": "349",
+    "price": 349,
     "typeOfCare": [""],
     "cosmeticType": false
   },
@@ -177,7 +177,7 @@
     "manufacturer": "ТАПО",
     "brand": "ТАПО",
     "description": "Очиститель дымохода трубочист",
-    "price": "539",
+    "price": 539,
     "typeOfCare": [""],
     "cosmeticType": false
   },
@@ -191,7 +191,7 @@
     "manufacturer": "Mr Muscle",
     "brand": "Mr Muscle",
     "description": "Чистящее средство для стекол, с нашатырным спиртом",
-    "price": "270",
+    "price": 270,
     "typeOfCare": [""],
     "cosmeticType": false
   },
@@ -205,7 +205,7 @@
     "manufacturer": "VERMONT",
     "brand": "VERMONT",
     "description": "Тряпка для пола СВЕРХПЛОТНАЯ, Вискоза 160 г/м2 - размер 50х60см",
-    "price": "180",
+    "price": 180,
     "typeOfCare": [""],
     "cosmeticType": false
   },
@@ -219,7 +219,7 @@
     "manufacturer": "Smart Comfort",
     "brand": "Smart Comfort",
     "description": "Влажная туалетная бумага смываемая 5 уп. х 42 шт",
-    "price": "366",
+    "price": 366,
     "typeOfCare": ["гигиеническая продукция"],
     "cosmeticType": true
   },
@@ -233,7 +233,7 @@
     "manufacturer": "Свитлогорье",
     "brand": "Свитлогорье",
     "description": "Сырок творожный глазированный Свитлогорье с кокосом в молочном шоколаде, 23%",
-    "price": "49",
+    "price": 40,
     "typeOfCare": [""],
     "cosmeticType": false
   },
@@ -247,7 +247,7 @@
     "manufacturer": "Ehrmann",
     "brand": "Ehrmann",
     "description": "безлактозный, с шоколадом, 1,5%",
-    "price": "103",
+    "price": 103,
     "typeOfCare": [""],
     "cosmeticType": false
   }

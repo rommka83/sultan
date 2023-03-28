@@ -1,12 +1,13 @@
 import { Outlet } from 'react-router';
+import { Footer } from 'widgets/Footer';
 import { Header } from 'widgets/Header';
-import styles from './styles.module.css';
 
 const Main = () => {
   return (
     <>
       <Header />
       <Outlet />
+      <Footer />
     </>
   );
 };

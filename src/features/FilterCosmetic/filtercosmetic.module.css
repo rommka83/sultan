@@ -1,0 +1,22 @@
+.listHead {
+  display: flex;
+}
+.itemHead {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(43, 28, 1, 0.1);
+  border-radius: 10px;
+
+  line-height: 17px;
+  color: var(--color-2);
+  cursor: pointer;
+}
+.itemHead:not(:last-child) {
+  margin-right: 10px;
+}
+.itemActiv {
+  background: var(--color-6);
+}

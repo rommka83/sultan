@@ -14,7 +14,7 @@ interface IProps {
   manufacturer: string;
   brand: string;
   description: string;
-  price: string;
+  price: number;
   typeOfCare?: string[];
   cosmeticType?: boolean;
 }

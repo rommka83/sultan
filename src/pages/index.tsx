@@ -1,7 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-// import AdminCabinet from './AdminCabinet';
-// import Main from './main';
+import { Loader } from 'shared/Loader';
 
 const Main = lazy(() => import('./main'));
 const AdminCabinet = lazy(() => import('./AdminCabinet'));
@@ -9,8 +8,7 @@ const CatalogPage = lazy(() => import('./CatalogPage'));
 
 export const Routing = () => {
   return (
-    //TODO: сделать нормальный лоадер
-    <Suspense fallback={<div>Секунду...</div>}>
+    <Suspense fallback={<Loader />}>
       <Routes>
         <Route path='/' element={<Main />}>
           <Route path='admin' element={<AdminCabinet />} />

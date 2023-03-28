@@ -8,7 +8,7 @@ export interface IProduct {
   manufacturer: string;
   brand: string;
   description: string;
-  price: string;
-  typeOfCare?: string[];
+  price: number;
+  typeOfCare: string[];
   cosmeticType: boolean;
 }

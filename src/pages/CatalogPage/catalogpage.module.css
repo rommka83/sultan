@@ -1,0 +1,30 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  margin-bottom: 100px;
+}
+.crumbs {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+.catalogHead {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+.filtersBlock {
+  grid-column: 1;
+  grid-row: 3 / span 2;
+}
+.listProducts {
+  grid-column: 2;
+  grid-row: 3;
+}
+.text {
+  grid-column: 2;
+  grid-row: 4;
+
+  line-height: 150%;
+  color: var(--color-2);
+}

@@ -1,4 +1,5 @@
 .form {
+  position: relative;
   display: flex;
   width: fit-content;
   padding: 7px 10px 7px 20px;
@@ -8,4 +9,20 @@
 .inp {
   margin-right: 10px;
   background-color: transparent;
+}
+.srarchList {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background: var(--color-5);
+}
+.srarchItem {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.srarchItem:not(:last-child) {
+  border-bottom: 1px dashed var(--color-2);
 }

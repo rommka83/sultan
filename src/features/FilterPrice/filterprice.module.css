@@ -1,0 +1,25 @@
+.subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.blockPrice {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.blockPrice > span {
+  font-size: 20px;
+  margin: 0 10px;
+}
+.inp {
+  display: flex;
+  text-align: center;
+  width: 100px;
+  padding: 5px 15px;
+  background: var(--color-6);
+  font-weight: 300;
+  font-size: 12px;
+  color: var(--color-2);
+  border-radius: 20px;
+}
