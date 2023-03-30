@@ -1,12 +1,13 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './crumbs.module.css';
 
 interface IProps {
   path: 'catalog' | 'bascet' | 'product' | 'cosmetic';
+  name?: string;
 }
 
-export function Crumbs({ path }: IProps) {
+export function Crumbs({ path, name }: IProps) {
   const renderPath = function () {
     switch (path) {
       case 'catalog':
@@ -19,7 +20,7 @@ export function Crumbs({ path }: IProps) {
             <li className={styles.item}>
               <Link to={'/catalog'}>Каталог</Link>
             </li>
-            <li className={styles.item}>Название товара</li>
+            <li className={styles.item}>{name}</li>
           </>
         );
     }

@@ -1,6 +1,6 @@
 import { nanoid } from '@reduxjs/toolkit';
 import { useAppDispatch, useAppSelector } from 'app/store/hooks';
-import { setMySelectValue } from 'app/store/mySelectStore copy';
+import { setMySelectValue } from 'app/store/mySelectStore';
 import React, { useState } from 'react';
 import { SvgIcon } from 'shared/SvgIcon';
 import styles from './myselect.module.css';

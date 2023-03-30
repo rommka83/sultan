@@ -12,6 +12,8 @@ const initialState: catalogProductsState = {
   products: !oldData ? DB : JSON.parse(oldData),
 };
 
+!oldData && localStorage.setItem('catalogProduct', JSON.stringify(DB));
+
 const catalogProductsStore = createSlice({
   name: 'catalogProducts',
   initialState,

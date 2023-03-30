@@ -6,9 +6,9 @@
   padding: 40px 15px 30px;
   /* border: 1px solid black; */
 }
-
 .img {
   height: 195px;
+  width: 100%;
   margin-bottom: 5px;
   object-fit: contain;
 }

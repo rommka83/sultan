@@ -45,17 +45,7 @@ export function ListProducts({ data }: IProps) {
         {(list[number] || list).map((product) => {
           return (
             <li className={styles.item} key={product.id}>
-              <CardProduct
-                url={product.url}
-                description={product.description}
-                sizeType={product.sizeType}
-                size={product.size}
-                name={product.name}
-                barcode={product.barcode}
-                manufacturer={product.manufacturer}
-                brand={product.brand}
-                price={product.price}
-              />
+              <CardProduct product={product} />
             </li>
           );
         })}

@@ -1,0 +1,20 @@
+.counter {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.counterBtn {
+  padding: 5px 15px;
+  color: var(--color-2);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 198, 80, 0.3) 0%,
+    rgba(254, 202, 110, 0.3) 97.25%
+  );
+  border-radius: 15px;
+}
+.counterValue {
+  width: 50px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-2);
+}

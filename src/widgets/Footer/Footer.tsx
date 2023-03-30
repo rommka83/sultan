@@ -10,7 +10,7 @@ export function Footer() {
     <footer className={styles.footer}>
       <div className={`${styles.wrapper} container`}>
         <ul className={styles.list}>
-          <li className={styles.item}>
+          <li className={`${styles.item} ${styles.logo}`}>
             <Logo color='var(--color-8)' />
             <p className={styles.sultanDescription}>
               Компания «Султан» — снабжаем розничные магазины товарами "под
@@ -24,7 +24,7 @@ export function Footer() {
               </div>
             </div>
           </li>
-          <li className={styles.item}>
+          <li className={`${styles.item} ${styles.menu}`}>
             <h3 className={styles.subtytle}>Меню сайта:</h3>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
@@ -41,7 +41,7 @@ export function Footer() {
               </li>
             </ul>
           </li>
-          <li className={styles.item}>
+          <li className={`${styles.item} ${styles.category}`}>
             <h3 className={styles.subtytle}>Категории:</h3>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
@@ -61,7 +61,7 @@ export function Footer() {
               </li>
             </ul>
           </li>
-          <li className={styles.item}>
+          <li className={`${styles.item} ${styles.price}`}>
             <h3 className={styles.subtytle}>Категории:</h3>
             <Btn text='Прайс-лист' icon={<SvgIcon type='download' />} />
             <p className={styles.actionText}>Связь в мессенджерах:</p>
@@ -74,7 +74,7 @@ export function Footer() {
               </li>
             </ul>
           </li>
-          <li className={styles.item}>
+          <li className={`${styles.item} ${styles.contact}`}>
             <h3 className={styles.subtytle}>Контакты:</h3>
             <a href='#' className={styles.link}>
               +7 (777) 490-00-91

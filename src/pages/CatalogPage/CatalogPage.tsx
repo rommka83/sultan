@@ -1,5 +1,4 @@
-import { useAppDispatch, useAppSelector } from 'app/store/hooks';
-import { CardProduct } from 'entities/CardProduct';
+import { useAppSelector } from 'app/store/hooks';
 import { ListProducts } from 'entities/ListProducts';
 import { Crumbs } from 'features/Crumbs';
 import React from 'react';
@@ -7,9 +6,8 @@ import { CatalogHead } from 'widgets/CatalogHead';
 import { FiltersBlock } from 'widgets/FiltersBlock';
 import styles from './catalogpage.module.css';
 
-const CatalogPage = () => {
+export function CatalogPage() {
   const productsCatalog = useAppSelector((state) => state.productsCatalog);
-  // const dispatch = useAppDispatch();
 
   return (
     <main className={`${styles.wrapper} container`}>
@@ -34,6 +32,4 @@ const CatalogPage = () => {
       </span>
     </main>
   );
-};
-
-export default CatalogPage;
+}

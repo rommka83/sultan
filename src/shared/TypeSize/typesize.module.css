@@ -1,0 +1,11 @@
+.size {
+  display: flex;
+}
+.sizeIcon {
+  width: 20px;
+}
+.sizeValue {
+  margin-left: 5px;
+  font-size: 12px;
+  color: var(--color-2);
+}
