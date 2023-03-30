@@ -4,6 +4,7 @@ import manufacturerStore from './manufaturers';
 import multySelectStore from './multySelectStore';
 import mySelectStore from './mySelectStore';
 import basketStore from './basketSlice';
+import typesOfCareSlice from './typeOfCarSlice';
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
     mySelectValue: mySelectStore.reducer,
     manufacturers: manufacturerStore.reducer,
     basket: basketStore.reducer,
+    typesOfCareSlice: typesOfCareSlice.reducer,
   },
 });
 

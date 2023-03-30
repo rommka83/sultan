@@ -1,34 +1,29 @@
 import { nanoid } from '@reduxjs/toolkit';
 import { filter, reset } from 'app/store/catalogProductsStore';
-import { useAppDispatch } from 'app/store/hooks';
+import { useAppDispatch, useAppSelector } from 'app/store/hooks';
+import { checkboxReset } from 'app/store/manufaturers';
+import { enterType, typesOfCareReset } from 'app/store/typeOfCarSlice';
 import React from 'react';
 import styles from './filtercosmetic.module.css';
 
-const typesOfCare = [
-  { activ: false, text: 'Уход за телом' },
-  { activ: false, text: 'Уход за руками' },
-  { activ: false, text: 'Уход за ногами' },
-  { activ: false, text: 'Уход за лицом' },
-  { activ: false, text: 'Уход за волосами' },
-  { activ: false, text: 'Средства для загара' },
-  { activ: false, text: 'Средства для бритья' },
-  { activ: false, text: 'Подарочные наборы' },
-  { activ: false, text: 'Гигиеническая продукция' },
-  { activ: false, text: 'Гигиена полости рта' },
-  { activ: false, text: 'Бумажная продукция' },
-];
 interface IProps {
   type?: 'gorizontal' | 'vertical';
 }
 
 export function FilterCosmetic({ type = 'gorizontal' }: IProps) {
+  const typesOfCare = useAppSelector(
+    (state) => state.typesOfCareSlice.typesOfCare
+  );
   const dispatch = useAppDispatch();
 
   const hendleClick = function (e: { activ: boolean; text: string }) {
-    typesOfCare.map((el) => {
-      el === e ? (el.activ = true) : (el.activ = false);
+    let _arr = typesOfCare.map((el) => {
+      return el === e ? { ...el, activ: true } : { ...el, activ: false };
     });
+    dispatch(enterType(_arr));
     dispatch(filter(e.text));
+    dispatch(checkboxReset());
+    window.scroll(0, 0);
   };
 
   return (
@@ -52,7 +47,7 @@ export function FilterCosmetic({ type = 'gorizontal' }: IProps) {
         <li
           className={styles.itemHead}
           onClick={() => {
-            typesOfCare.map((e) => (e.activ = false));
+            dispatch(typesOfCareReset());
             dispatch(reset());
           }}
           key={nanoid()}

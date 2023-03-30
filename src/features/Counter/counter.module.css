@@ -18,3 +18,9 @@
   font-weight: 500;
   color: var(--color-2);
 }
+@media (max-width: 1260px) {
+  .counter {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}

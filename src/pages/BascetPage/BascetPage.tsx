@@ -1,6 +1,8 @@
+import { Desktop, Mobile, Tablet } from 'app/hooks/mediaScrin';
 import { basketAdd } from 'app/store/basketSlice';
 import { useAppSelector, useAppDispatch } from 'app/store/hooks';
 import { IProductInBasket } from 'app/types/basket';
+import { Back } from 'features/Back';
 import { Counter } from 'features/Counter';
 import { Crumbs } from 'features/Crumbs';
 import React, { useState } from 'react';
@@ -86,7 +88,15 @@ export function BascetPage() {
 
   return (
     <main className={`${styles.root} container`}>
-      <Crumbs path='bascet' />
+      <Desktop>
+        <Crumbs path='bascet' />
+      </Desktop>
+      <Tablet>
+        <Back />
+      </Tablet>
+      <Mobile>
+        <Back />
+      </Mobile>
       <h2 className={styles.title}>Корзина</h2>
       <ul className={styles.list}>
         {basket.productsInBasket.map((el) => {

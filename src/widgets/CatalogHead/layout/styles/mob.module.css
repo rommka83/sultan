@@ -1,0 +1,44 @@
+.root {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 15px;
+  margin-bottom: 30px;
+}
+.Back {
+  grid-column: 1;
+  grid-row: 1;
+}
+.title {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.FiltersBlock {
+  grid-column: 1;
+  grid-row: 3;
+  font-weight: 500;
+  font-size: 16px;
+}
+.span {
+  padding: 20px 10px;
+}
+.Btn {
+  grid-column: 2;
+  grid-row: 3;
+}
+.BtnIsOpen > button {
+  transform: rotate(180deg);
+}
+.FilterCosmetic {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+}
+.sort {
+  grid-column: 1 / span 2;
+  grid-row: 5;
+}

@@ -1,28 +1,47 @@
-import { useAppSelector } from 'app/store/hooks';
+/* eslint-disable react-hooks/exhaustive-deps */
+import { reset } from 'app/store/catalogProductsStore';
+import { useAppDispatch, useAppSelector } from 'app/store/hooks';
+import { typesOfCareReset } from 'app/store/typeOfCarSlice';
 import { ListProducts } from 'entities/ListProducts';
 import { Crumbs } from 'features/Crumbs';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CatalogHead } from 'widgets/CatalogHead';
 import { FiltersBlock } from 'widgets/FiltersBlock';
 import styles from './catalogpage.module.css';
 
 export function CatalogPage() {
   const productsCatalog = useAppSelector((state) => state.productsCatalog);
+  const dispatch = useAppDispatch();
 
+  useEffect(() => {
+    productsCatalog.products.length === 0 &&
+      setTimeout(() => {
+        dispatch(reset());
+        dispatch(typesOfCareReset());
+      }, 1500);
+  }, [productsCatalog]);
   return (
     <main className={`${styles.wrapper} container`}>
-      <div className={styles.crumbs}>
-        <Crumbs path={'product'} />
-      </div>
-      <div className={styles.catalogHead}>
-        <CatalogHead />
-      </div>
-      <div className={styles.filtersBlock}>
-        <FiltersBlock />
-      </div>
-      <div className={styles.listProducts}>
-        <ListProducts data={productsCatalog.products} />
-      </div>
+      {productsCatalog.products.length > 0 ? (
+        <>
+          <div className={styles.crumbs}>
+            <Crumbs path={'product'} />
+          </div>
+          <div className={styles.catalogHead}>
+            <CatalogHead />
+          </div>
+          <div className={styles.filtersBlock}>
+            <FiltersBlock />
+          </div>
+          <div className={styles.listProducts}>
+            <ListProducts data={productsCatalog.products} />
+          </div>
+        </>
+      ) : (
+        <div className={styles.noProduct}>
+          К сожалению по Вашему запросу ничего не найдено(
+        </div>
+      )}
       <span className={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum
         ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate

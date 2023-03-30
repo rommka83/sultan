@@ -9,7 +9,7 @@ import { SvgIcon } from 'shared/SvgIcon';
 import { VerticalLine } from 'shared/VerticalLine';
 import styles from './mobile.module.css';
 
-export function Mobile() {
+export function Mob() {
   const [isOpen, setIsOpen] = useState(false);
   const hendleClick = () => {
     setIsOpen(!isOpen);

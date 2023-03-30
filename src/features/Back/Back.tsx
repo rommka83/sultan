@@ -10,7 +10,7 @@ export function Back() {
   return (
     <div className={styles.root}>
       <Btn
-        icon={<SvgIcon type='arrowLeft' />}
+        icon={<SvgIcon type='arrowLeft' color='var(--color-2)' />}
         f={handleBack}
         color='var(--color-6)'
       />

@@ -15,12 +15,10 @@ export const Routing = () => {
       <Routes>
         <Route path='/' element={<Main />}>
           <Route path='/' element={<Home />} />
-
           <Route path='admin' element={<AdminCabinet />} />
           <Route path='catalog' element={<CatalogPage />} />
           <Route path='catalog/:product' element={<ProductPage />} />
           <Route path='basket' element={<BascetPage />} />
-          {/* <Route path='*' element={<NoMatch />} /> */}
         </Route>
       </Routes>
     </Suspense>

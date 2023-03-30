@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { nanoid } from '@reduxjs/toolkit';
 import { reset, sort } from 'app/store/catalogProductsStore';
 import { useAppSelector, useAppDispatch } from 'app/store/hooks';

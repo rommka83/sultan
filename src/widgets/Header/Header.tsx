@@ -1,11 +1,22 @@
+import { Desktop, Tablet } from 'app/hooks/mediaScrin';
 import React from 'react';
-import { Desctop, Mobile } from './layout';
+import { DescTop, Mob, Tab } from './layout';
+import { Mobile } from './../../app/hooks/mediaScrin';
 
 export function Header() {
   return (
     <>
-      <Desctop />
-      <Mobile />
+      <Desktop>
+        <DescTop />
+      </Desktop>
+      <Tablet>
+        <Tab />
+      </Tablet>
+      <Mobile>
+        <Mob />
+      </Mobile>
+
+      {/* <Mobile /> */}
     </>
   );
 }

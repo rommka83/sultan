@@ -1,6 +1,6 @@
 import { reset, sort } from 'app/store/catalogProductsStore';
 import { useAppDispatch, useAppSelector } from 'app/store/hooks';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './filterprice.module.css';
 
 export function FilterPrice() {
@@ -46,11 +46,6 @@ export function FilterPrice() {
       )
     );
   };
-
-  useEffect(() => {
-    setPriceMin(min);
-    setPriceMax(max);
-  }, [productsCatalog]);
 
   return (
     <div className={styles.price}>

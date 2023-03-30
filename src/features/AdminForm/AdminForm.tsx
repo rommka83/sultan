@@ -22,7 +22,6 @@ export function AdminForm() {
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
 
-  const productsCatalog = useAppSelector((state) => state.productsCatalog);
   const multySelectStore = useAppSelector((state) => state.multySelectValue);
   const dispatch = useAppDispatch();
 

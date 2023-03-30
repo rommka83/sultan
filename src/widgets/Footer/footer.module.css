@@ -133,3 +133,34 @@
     grid-column: 5;
   }
 }
+@media (max-width: 700px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 25px;
+  }
+  .logo {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .blokLogo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .category {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .price {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .contact {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
