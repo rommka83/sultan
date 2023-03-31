@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/sultan/static/css/main.71d424b2.css",
+    "main.js": "/sultan/static/js/main.ac5e5e4d.js",
+    "static/css/129.1c2ee4d1.chunk.css": "/sultan/static/css/129.1c2ee4d1.chunk.css",
+    "static/js/129.7dc7f9bf.chunk.js": "/sultan/static/js/129.7dc7f9bf.chunk.js",
+    "static/css/108.85769875.chunk.css": "/sultan/static/css/108.85769875.chunk.css",
+    "static/js/108.e21206e4.chunk.js": "/sultan/static/js/108.e21206e4.chunk.js",
+    "static/css/282.8333ed2f.chunk.css": "/sultan/static/css/282.8333ed2f.chunk.css",
+    "static/js/282.575b3139.chunk.js": "/sultan/static/js/282.575b3139.chunk.js",
+    "static/css/162.3028095c.chunk.css": "/sultan/static/css/162.3028095c.chunk.css",
+    "static/js/162.1855fd1c.chunk.js": "/sultan/static/js/162.1855fd1c.chunk.js",
+    "static/css/132.f402248d.chunk.css": "/sultan/static/css/132.f402248d.chunk.css",
+    "static/js/132.bc7054d6.chunk.js": "/sultan/static/js/132.bc7054d6.chunk.js",
+    "static/css/648.cf95dabb.chunk.css": "/sultan/static/css/648.cf95dabb.chunk.css",
+    "static/js/648.6170c836.chunk.js": "/sultan/static/js/648.6170c836.chunk.js",
+    "static/js/805.b27ad36f.chunk.js": "/sultan/static/js/805.b27ad36f.chunk.js",
+    "static/js/392.c02cbcd8.chunk.js": "/sultan/static/js/392.c02cbcd8.chunk.js",
+    "index.html": "/sultan/index.html",
+    "main.71d424b2.css.map": "/sultan/static/css/main.71d424b2.css.map",
+    "main.ac5e5e4d.js.map": "/sultan/static/js/main.ac5e5e4d.js.map",
+    "129.1c2ee4d1.chunk.css.map": "/sultan/static/css/129.1c2ee4d1.chunk.css.map",
+    "129.7dc7f9bf.chunk.js.map": "/sultan/static/js/129.7dc7f9bf.chunk.js.map",
+    "108.85769875.chunk.css.map": "/sultan/static/css/108.85769875.chunk.css.map",
+    "108.e21206e4.chunk.js.map": "/sultan/static/js/108.e21206e4.chunk.js.map",
+    "282.8333ed2f.chunk.css.map": "/sultan/static/css/282.8333ed2f.chunk.css.map",
+    "282.575b3139.chunk.js.map": "/sultan/static/js/282.575b3139.chunk.js.map",
+    "162.3028095c.chunk.css.map": "/sultan/static/css/162.3028095c.chunk.css.map",
+    "162.1855fd1c.chunk.js.map": "/sultan/static/js/162.1855fd1c.chunk.js.map",
+    "132.f402248d.chunk.css.map": "/sultan/static/css/132.f402248d.chunk.css.map",
+    "132.bc7054d6.chunk.js.map": "/sultan/static/js/132.bc7054d6.chunk.js.map",
+    "648.cf95dabb.chunk.css.map": "/sultan/static/css/648.cf95dabb.chunk.css.map",
+    "648.6170c836.chunk.js.map": "/sultan/static/js/648.6170c836.chunk.js.map",
+    "805.b27ad36f.chunk.js.map": "/sultan/static/js/805.b27ad36f.chunk.js.map",
+    "392.c02cbcd8.chunk.js.map": "/sultan/static/js/392.c02cbcd8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71d424b2.css",
+    "static/js/main.ac5e5e4d.js"
+  ]
+}
