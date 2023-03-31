@@ -1,8 +1,12 @@
 import { nanoid } from '@reduxjs/toolkit';
 import { filter, reset } from 'app/store/catalogProductsStore';
 import { useAppDispatch, useAppSelector } from 'app/store/hooks';
-import { checkboxReset } from 'app/store/manufaturers';
+import {
+  changeListManufacturer,
+  manufacturerReset,
+} from 'app/store/manufaturers';
 import { enterType, typesOfCareReset } from 'app/store/typeOfCarSlice';
+import { IProduct } from 'app/types/product';
 import React from 'react';
 import styles from './filtercosmetic.module.css';
 
@@ -20,9 +24,17 @@ export function FilterCosmetic({ type = 'gorizontal' }: IProps) {
     let _arr = typesOfCare.map((el) => {
       return el === e ? { ...el, activ: true } : { ...el, activ: false };
     });
+
+    const oldData = localStorage.getItem('catalogProduct');
+    let ARR = [];
+    if (oldData)
+      ARR = JSON.parse(oldData).filter((el: IProduct) => {
+        return el.typeOfCare.indexOf(e.text.toLowerCase()) > -1;
+      });
+    dispatch(changeListManufacturer(ARR));
+
     dispatch(enterType(_arr));
     dispatch(filter(e.text));
-    dispatch(checkboxReset());
     window.scroll(0, 0);
   };
 
@@ -49,6 +61,7 @@ export function FilterCosmetic({ type = 'gorizontal' }: IProps) {
           onClick={() => {
             dispatch(typesOfCareReset());
             dispatch(reset());
+            dispatch(manufacturerReset());
           }}
           key={nanoid()}
         >

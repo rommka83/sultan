@@ -10,11 +10,12 @@ import { FiltersBlock } from 'widgets/FiltersBlock';
 import styles from './catalogpage.module.css';
 
 export function CatalogPage() {
-  const productsCatalog = useAppSelector((state) => state.productsCatalog);
+  const productsCatalog = useAppSelector(
+    (state) => state.productsCatalog.products
+  );
   const dispatch = useAppDispatch();
-
   useEffect(() => {
-    productsCatalog.products.length === 0 &&
+    productsCatalog.length === 0 &&
       setTimeout(() => {
         dispatch(reset());
         dispatch(typesOfCareReset());
@@ -22,19 +23,19 @@ export function CatalogPage() {
   }, [productsCatalog]);
   return (
     <main className={`${styles.wrapper} container`}>
-      {productsCatalog.products.length > 0 ? (
+      <div className={styles.crumbs}>
+        <Crumbs path={'product'} />
+      </div>
+      <div className={styles.catalogHead}>
+        <CatalogHead />
+      </div>
+      <div className={styles.filtersBlock}>
+        <FiltersBlock />
+      </div>
+      {productsCatalog.length > 0 ? (
         <>
-          <div className={styles.crumbs}>
-            <Crumbs path={'product'} />
-          </div>
-          <div className={styles.catalogHead}>
-            <CatalogHead />
-          </div>
-          <div className={styles.filtersBlock}>
-            <FiltersBlock />
-          </div>
           <div className={styles.listProducts}>
-            <ListProducts data={productsCatalog.products} />
+            <ListProducts data={productsCatalog} />
           </div>
         </>
       ) : (

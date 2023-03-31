@@ -4,7 +4,7 @@ import {
   resetMultySelect,
   setMultySelectValue,
 } from 'app/store/multySelectStore';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SvgIcon } from 'shared/SvgIcon';
 import styles from './myselect.module.css';
 
@@ -39,6 +39,10 @@ export function MyMultySelect({ disabled = true }: IProps) {
       return list.filter((e) => e !== el);
     });
   };
+
+  useEffect(() => {
+    multySelectStore.value === '' && setList(typeOfCare);
+  }, [multySelectStore]);
   return (
     <div className={styles.select}>
       <div className={styles.form}>

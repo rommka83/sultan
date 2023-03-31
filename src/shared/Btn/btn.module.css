@@ -4,6 +4,9 @@
   color: var(--color-8);
   font-weight: 700;
 }
+.btn:disabled {
+  background-color: grey;
+}
 
 .btnRing {
   height: fit-content;

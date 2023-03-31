@@ -14,7 +14,7 @@ const products = !oldData ? DB : JSON.parse(oldData);
 const createdManufacturerList = function (arr: IProduct[]) {
   let _arr = [];
   let groupByUseCase: { [index: string]: number } = {};
-  products.forEach((item: IProduct) => {
+  arr.forEach((item: IProduct) => {
     if (!groupByUseCase.hasOwnProperty(`${item.manufacturer}`)) {
       groupByUseCase[item.manufacturer] = 0;
     }
@@ -50,8 +50,19 @@ const manufacturerStore = createSlice({
     checkboxReset(state) {
       state.manufacturers = initialState.manufacturers;
     },
+    changeListManufacturer(state, obj: PayloadAction<IProduct[]>) {
+      state.manufacturers = createdManufacturerList(obj.payload);
+    },
+    manufacturerReset(state) {
+      state.manufacturers = createdManufacturerList(products);
+    },
   },
 });
 
-export const { checked, checkboxReset } = manufacturerStore.actions;
+export const {
+  checked,
+  checkboxReset,
+  changeListManufacturer,
+  manufacturerReset,
+} = manufacturerStore.actions;
 export default manufacturerStore;
