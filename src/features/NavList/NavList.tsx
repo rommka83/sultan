@@ -31,7 +31,7 @@ export function NavList({ f }: IProps) {
         </a>
       </li>
       <li className={styles.item} onClick={f}>
-        <Link to='/admin' className={styles.link}>
+        <Link to='sultan/admin' className={styles.link}>
           Админка
         </Link>
       </li>

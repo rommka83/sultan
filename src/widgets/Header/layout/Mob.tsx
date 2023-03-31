@@ -29,7 +29,7 @@ export function Mob() {
           )}
         </div>
         <div className={styles.layoutBottom}>
-          <Link to='/catalog'>
+          <Link to='/sultan/catalog'>
             <BtnTransparent
               icon={<SvgIcon type='catalog' color='#3f4e65' />}
               text='Каталог'

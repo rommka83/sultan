@@ -107,7 +107,7 @@ export function Mob() {
                 </div>
               </div>
               <div className={styles.inBasket}>
-                <Link to='/catalog'>
+                <Link to='/sultan/catalog'>
                   <Btn
                     text='В корзину'
                     icon={<SvgIcon type='basket' color='var(--color-8)' />}

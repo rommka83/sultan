@@ -68,7 +68,7 @@ export function CardProduct({ product }: IProps) {
 
   return (
     <article className={styles.card}>
-      <Link to={`/catalog/${product.barcode}`}>
+      <Link to={`/sultan/catalog/${product.barcode}`}>
         <img
           className={styles.img}
           src={product.url}

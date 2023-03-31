@@ -109,7 +109,7 @@ export function Desk() {
                 <div className={styles.counter}>
                   <Counter value={value} f1={decr} f2={incr} />
                 </div>
-                <Link to='/catalog'>
+                <Link to='/sultan/catalog'>
                   <Btn
                     text='В корзину'
                     icon={<SvgIcon type='basket' color='var(--color-8)' />}

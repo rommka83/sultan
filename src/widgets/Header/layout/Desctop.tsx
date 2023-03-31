@@ -42,7 +42,7 @@ export function DescTop() {
         <div className={styles.layoutBottom}>
           <Logo />
           <div className={styles.btnCatalog}>
-            <Link to='/catalog'>
+            <Link to='/sultan/catalog'>
               <Btn text='Каталог' icon={<SvgIcon type='catalog' />} />
             </Link>
           </div>

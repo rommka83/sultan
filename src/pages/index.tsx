@@ -14,11 +14,11 @@ export const Routing = () => {
     <Suspense fallback={<Loader />}>
       <Routes>
         <Route path='/' element={<Main />}>
-          <Route path='/sultan' element={<Home />} />
-          <Route path='/sultan/admin' element={<AdminCabinet />} />
-          <Route path='/sultan/catalog' element={<CatalogPage />} />
-          <Route path='/sultan/catalog/:product' element={<ProductPage />} />
-          <Route path='/sultan/basket' element={<BascetPage />} />
+          <Route path='/sultan/' element={<Home />} />
+          <Route path='sultan/admin' element={<AdminCabinet />} />
+          <Route path='sultan/catalog' element={<CatalogPage />} />
+          <Route path='sultan/catalog/:product' element={<ProductPage />} />
+          <Route path='sultan/basket' element={<BascetPage />} />
         </Route>
       </Routes>
     </Suspense>

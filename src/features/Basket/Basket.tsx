@@ -13,7 +13,7 @@ export function Basket() {
   }, [basket]);
 
   return (
-    <Link to='basket'>
+    <Link to='/sultan/basket'>
       <div className={styles.root}>
         <div className={styles.blockBasket}>
           <button className={styles.btnBasket}>
