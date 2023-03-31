@@ -15,10 +15,10 @@ export const Routing = () => {
       <Routes>
         <Route path='/' element={<Main />}>
           <Route path='/sultan' element={<Home />} />
-          <Route path='admin' element={<AdminCabinet />} />
-          <Route path='catalog' element={<CatalogPage />} />
-          <Route path='catalog/:product' element={<ProductPage />} />
-          <Route path='basket' element={<BascetPage />} />
+          <Route path='/sultan/admin' element={<AdminCabinet />} />
+          <Route path='/sultan/catalog' element={<CatalogPage />} />
+          <Route path='/sultan/catalog/:product' element={<ProductPage />} />
+          <Route path='/sultan/basket' element={<BascetPage />} />
         </Route>
       </Routes>
     </Suspense>
