@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sultan/static/css/main.71d424b2.css",
-    "main.js": "/sultan/static/js/main.4c890f7b.js",
+    "main.js": "/sultan/static/js/main.b7f23536.js",
     "static/css/129.1c2ee4d1.chunk.css": "/sultan/static/css/129.1c2ee4d1.chunk.css",
-    "static/js/129.72314227.chunk.js": "/sultan/static/js/129.72314227.chunk.js",
+    "static/js/129.9a408461.chunk.js": "/sultan/static/js/129.9a408461.chunk.js",
     "static/css/108.85769875.chunk.css": "/sultan/static/css/108.85769875.chunk.css",
     "static/js/108.e21206e4.chunk.js": "/sultan/static/js/108.e21206e4.chunk.js",
     "static/css/282.8333ed2f.chunk.css": "/sultan/static/css/282.8333ed2f.chunk.css",
-    "static/js/282.575b3139.chunk.js": "/sultan/static/js/282.575b3139.chunk.js",
+    "static/js/282.c3a2ea8b.chunk.js": "/sultan/static/js/282.c3a2ea8b.chunk.js",
     "static/css/162.3028095c.chunk.css": "/sultan/static/css/162.3028095c.chunk.css",
     "static/js/162.49d16f38.chunk.js": "/sultan/static/js/162.49d16f38.chunk.js",
     "static/css/132.f402248d.chunk.css": "/sultan/static/css/132.f402248d.chunk.css",
@@ -18,13 +18,13 @@
     "static/js/392.c02cbcd8.chunk.js": "/sultan/static/js/392.c02cbcd8.chunk.js",
     "index.html": "/sultan/index.html",
     "main.71d424b2.css.map": "/sultan/static/css/main.71d424b2.css.map",
-    "main.4c890f7b.js.map": "/sultan/static/js/main.4c890f7b.js.map",
+    "main.b7f23536.js.map": "/sultan/static/js/main.b7f23536.js.map",
     "129.1c2ee4d1.chunk.css.map": "/sultan/static/css/129.1c2ee4d1.chunk.css.map",
-    "129.72314227.chunk.js.map": "/sultan/static/js/129.72314227.chunk.js.map",
+    "129.9a408461.chunk.js.map": "/sultan/static/js/129.9a408461.chunk.js.map",
     "108.85769875.chunk.css.map": "/sultan/static/css/108.85769875.chunk.css.map",
     "108.e21206e4.chunk.js.map": "/sultan/static/js/108.e21206e4.chunk.js.map",
     "282.8333ed2f.chunk.css.map": "/sultan/static/css/282.8333ed2f.chunk.css.map",
-    "282.575b3139.chunk.js.map": "/sultan/static/js/282.575b3139.chunk.js.map",
+    "282.c3a2ea8b.chunk.js.map": "/sultan/static/js/282.c3a2ea8b.chunk.js.map",
     "162.3028095c.chunk.css.map": "/sultan/static/css/162.3028095c.chunk.css.map",
     "162.49d16f38.chunk.js.map": "/sultan/static/js/162.49d16f38.chunk.js.map",
     "132.f402248d.chunk.css.map": "/sultan/static/css/132.f402248d.chunk.css.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.71d424b2.css",
-    "static/js/main.4c890f7b.js"
+    "static/js/main.b7f23536.js"
   ]
 }
