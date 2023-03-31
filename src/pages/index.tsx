@@ -14,7 +14,7 @@ export const Routing = () => {
     <Suspense fallback={<Loader />}>
       <Routes>
         <Route path='/' element={<Main />}>
-          <Route path='/' element={<Home />} />
+          <Route path='/sultan' element={<Home />} />
           <Route path='admin' element={<AdminCabinet />} />
           <Route path='catalog' element={<CatalogPage />} />
           <Route path='catalog/:product' element={<ProductPage />} />
