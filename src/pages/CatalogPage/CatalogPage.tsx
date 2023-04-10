@@ -22,7 +22,7 @@ export function CatalogPage() {
       }, 1500);
   }, [productsCatalog]);
   return (
-    <main className={`${styles.wrapper} container`}>
+    <main className={`${styles.wrapper} container`} data-testid='catalog-page'>
       <div className={styles.crumbs}>
         <Crumbs path={'product'} />
       </div>

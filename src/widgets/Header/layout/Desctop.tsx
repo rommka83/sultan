@@ -13,7 +13,7 @@ import styles from './desctop.module.css';
 
 export function DescTop() {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} data-testid='header'>
       <div className={`${styles.wrapper} container`}>
         <div className={styles.layoutTop}>
           <div className={styles.navigation}>
@@ -42,7 +42,7 @@ export function DescTop() {
         <div className={styles.layoutBottom}>
           <Logo />
           <div className={styles.btnCatalog}>
-            <Link to='/sultan/catalog'>
+            <Link to='/sultan/catalog' data-testid='link-catalog-page'>
               <Btn text='Каталог' icon={<SvgIcon type='catalog' />} />
             </Link>
           </div>

@@ -87,7 +87,7 @@ export function BascetPage() {
   };
 
   return (
-    <main className={`${styles.root} container`}>
+    <main className={`${styles.root} container`} data-testid='bascket-page'>
       <Desktop>
         <Crumbs path='bascet' />
       </Desktop>

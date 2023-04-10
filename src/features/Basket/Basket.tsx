@@ -13,17 +13,21 @@ export function Basket() {
   }, [basket]);
 
   return (
-    <Link to='/sultan/basket'>
+    <Link to='/sultan/basket' data-testid='link-bascket-page'>
       <div className={styles.root}>
         <div className={styles.blockBasket}>
           <button className={styles.btnBasket}>
             <SvgIcon type='basket' color='var(--color-2)' />
           </button>
-          <div className={styles.count}>{bask.generalCount}</div>
+          <div className={styles.count} data-testid='basket-counter'>
+            {bask.generalCount}
+          </div>
         </div>
         <div className={styles.blockText}>
           <p className={styles.name}>Корзина</p>
-          <p className={styles.price}>{bask.generalPrice} ₸</p>
+          <p className={styles.price} data-testid='basket-price'>
+            {bask.generalPrice} ₸
+          </p>
         </div>
       </div>
     </Link>

@@ -15,8 +15,6 @@ export function Header() {
       <Mobile>
         <Mob />
       </Mobile>
-
-      {/* <Mobile /> */}
     </>
   );
 }

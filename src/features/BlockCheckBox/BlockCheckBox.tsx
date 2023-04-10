@@ -62,6 +62,7 @@ export function BlockCheckBox() {
                   className={styles.inp}
                   checked={el.checked}
                   readOnly
+                  data-testid='inp'
                 />
                 <span>{`${el.manufacturer} (${el.count})`}</span>
               </label>
